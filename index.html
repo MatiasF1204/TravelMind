@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMind</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!-- Jquery para el funcionamiendo del desplazamiento -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar-fixed" id="home">
+        <nav class="teal darken-2">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo left">TravelMind</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- secciones -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#buscador">Buscar</a></li>
+                    <li><a href="#visitados">Más visitados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <!-- boton menu hamburguesa -->
+                <a href="#" data-target="responsive-menu" class="sidenav-trigger right">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- menu hamburguesa / slide -->
+    <ul id="responsive-menu" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="./img/carrusel2.jpg">
+                </div>
+                <a href="#name"><span class="white-text name">TravelMind</span></a>
+                <a href="#email"><span class="white-text email">jdtravelmind@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#buscador">Buscar</a></li>
+        <li><a href="#visitados">Más visitados</a></li>
+        <li><a class="waves-effect" href="#contacto">Contacto</a></li>
+        <div class="divider"></div>
+        <div class="row container section">
+            <div class="col 12">
+                <a href=""><i class="material-icons prefix" style="margin-right:10px">mail</i></a>
+                <a href=""><i class="material-icons prefix" style="margin-right:10px">call</i></a>
+                <a href=""><i class="material-icons prefix" style="margin-right:10px">chat</i></a>
+                <a href=""><i class="material-icons prefix" style="margin-right:10px">flight_takeoff</i></a>
+            </div>
+        </div>
+    </ul>
+
+    <!-- Media -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="./img/carrusel0.jpg" alt="">
+                <div class="caption center-align">
+                    <h3>¡Explora el mundo!</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                        Descubre destinos únicos y experiencias inolvidables.
+                    </h5>
+                    <div class="section">
+                        <a class="waves-effect teal darken-1 btn-small"><i
+                                class="material-icons right">arrow_forward</i>Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="./img/carrusel1.jpg" alt="">
+                <div class="caption left-align">
+                    <h3>Viaja con confianza y seguridad.</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                        Expertos en planificación y sistemas de seguridad.
+                    </h5>
+                    <div class="section">
+                        <a class="waves-effect teal darken-1 btn-small"><i
+                                class="material-icons right">arrow_forward</i>Ver más</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="./img/carrusel2.jpg" alt="">
+                <div class="caption right-align">
+                    <h3>¡Aventuras sin límites!</h3>
+                    <h5 class="light grey-text text-lighten-3">
+                        Desde playas paradisíacas hasta aventuras en la naturaleza.
+                    </h5>
+                    <div class="section">
+                        <a class="waves-effect teal darken-1 btn-small"><i
+                                class="material-icons right">arrow_forward</i>Ver más</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- buscador de destinos -->
+    <div class="s12 teal darken-2 destino section" id="buscador" style="margin-top: -16px">
+        <div class="container center-align">
+            <h4 class="white-text" style="margin-bottom: 25px;">¡BUSCA TU DESTINO!</h4>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row white buscador" style="margin-bottom: -30px">
+                        <div class="input-field col s12 white">
+                            <i class="material-icons prefix" style="margin-top:5px">flight_takeoff</i>
+                            <input type="text" id="autocomplete-input" class="autocomplete">
+                            <label for="autocomplete-input">Brasil, México, Paris...</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container white">
+        <div class="row section">
+
+            <div class="col s12 m4">
+                <div class="card center-align hoverable">
+                    <div class="card-image section">
+                        <i class="material-icons medium">place</i>
+                    </div>
+                    <div class="card-title">Escoge Dónde</div>
+                    <div class="card-content">
+                        <p>Explora destinos sorprendentes y elige tu próxima aventura perfecta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card center-align hoverable">
+                    <div class="card-image section">
+                        <i class="material-icons medium">shopping_cart</i>
+                    </div>
+                    <div class="card-title">Travel Shop</div>
+                    <div class="card-content">
+                        <p>Encuentra todo lo necesario para tu viaje ideal en nuestros comercios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card center-align hoverable">
+                    <div class="card-image section">
+                        <i class="material-icons medium">airplanemode_active</i>
+                    </div>
+                    <div class="card-title">Viaja Seguro</div>
+                    <div class="card-content">
+                        <p>Garantizamos tu tranquilidad con nuestros servicios de seguridad y protección.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- seccion de más visitados -->
+    <div class="container" id="visitados">
+        <h4 class="center">Más <span class="teal-text">visitados</span></h4>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/visit0.jpg">
+                        <span class="card-title">México</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/visit1.jpg">
+                        <span class="card-title">Ruinas de Chichén Itzá, México</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/visit2.jpg">
+                        <span class="card-title">Catedral de San Pablo, Lóndres</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- frame del mapa -->
+    <iframe width="100%" height="250" style="margin-bottom: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47497691453!2d-58.59811254643041!3d-34.61543034567927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716335232286!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- formularios -->
+    <div class="container" id="contacto">
+        <div class="row card-panel">
+            <h4 class="center-align teal-text" style="margin-bottom: 35px">Contáctenos</h4>
+            <form action="" class="col s12">
+                <div class="input-field col s6 m6">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Ingrese su nombre" data-length="10"
+                        class="validate autocomplete" required>
+                </div>
+                <div class="input-field col s6 m6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" class="validate" required placeholder="Ingrese su apellido">
+                </div>
+                <div class="input-field col s12 m12">
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" class="validate" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" class="materialize-textarea" data-length="120"
+                        placeholder="Escriba aquí su mensaje..."></textarea>
+                    <label for="textarea2">Mensaje</label>
+                </div>
+                <button class="btn waves-effect waves-light right" type="submit" name="enviar">
+                    Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">TravelMind</h5>
+                    <p class="grey-text text-lighten-4">Explora el mundo con nosotros y disfruta de viajes seguros,
+                        cómodos y memorables ¡Te esperamos!</p>
+                    <p class="grey-text text-lighten-4">+54 9 658155498
+                        <i class="material-icons left">call</i>
+                    </p>
+                    <p class="grey-text text-lighten-4">jdtravelmind@gmail.com
+                        <i class="material-icons left">mail</i>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">MENU</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Buscar</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Más visitados</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                Hecho por Matías Flores con Materialize CSS | Derechos de Copyright©
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
