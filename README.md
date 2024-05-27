@@ -1,5 +1,6 @@
-Descripción del Proyecto.
-Pequeña OnePage creada utilizando exclusivamente HTML, JavaScript y el framework de CSS: Materialize. La página cuenta con cuatro secciones principales:
+#Descripción del Proyecto.
+
+Pequeña OnePage **creada utilizando exclusivamente HTML, JavaScript y el framework de CSS: Materialize.** La página cuenta con cuatro secciones principales:
 
 Home: La sección inicial de la página.
 Buscar: Incluye un campo de entrada donde se inyecta una lista de países mediante JavaScript, permitiendo al usuario seleccionar uno.
